@@ -1,0 +1,61 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.GridLayout;
+import java.io.*;
+import java.util.Scanner;
+ 
+class yash
+	{
+        public static void main(String args[])
+		{
+	
+			JFrame jf=new JFrame("Fortis Hospital");
+			
+			jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			jf.setSize(1000,1000);        
+			JPanel panel = new JPanel();
+			panel.setLayout(new GridLayout(5,8,5,10));
+
+			JLabel jl1 = new JLabel("Patient Name");
+			
+
+			JLabel jl2 = new JLabel("Patient Age");
+			
+
+			JLabel jl3 = new JLabel("Disease");
+			
+			JLabel jl4 = new JLabel("Department");
+			
+			JLabel jl5 = new JLabel("Appointment Date");
+			
+
+			JTextField jt1 = new JTextField("    ");
+			JTextField jt2 = new JTextField("    ");
+			JTextField jt3 = new JTextField("    ");
+			JTextField jt4 = new JTextField("    ");
+			JTextField jt5 = new JTextField("    ");
+
+			JButton jb1=new JButton("ADD");
+			JButton jb2=new JButton("UPDATE");
+			JButton jb3=new JButton("DELETE");
+			JButton jb4=new JButton("EXIT");
+
+			panel.add(jl1);
+			panel.add(jt1);
+			panel.add(jl2);
+			panel.add(jt2);
+			panel.add(jl3);
+			panel.add(jt3);
+			panel.add(jl4);
+			panel.add(jt4);
+			panel.add(jl5);
+			panel.add(jt5);
+			panel.add(jb1);
+			panel.add(jb2);
+			panel.add(jb3);
+			panel.add(jb4);
+			jf.add(panel);
+			jf.setVisible(true);
+        }
+    }
